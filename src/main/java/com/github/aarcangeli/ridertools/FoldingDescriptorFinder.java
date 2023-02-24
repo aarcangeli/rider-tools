@@ -3,10 +3,8 @@ package com.github.aarcangeli.ridertools;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.folding.FoldingDescriptor;
 import com.intellij.openapi.util.TextRange;
-import com.intellij.psi.tree.IElementType;
 import com.jetbrains.rider.cpp.fileType.lexer.CppTokenTypes;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,11 +73,5 @@ class FoldingDescriptorFinder {
 
             iterator.advanceElement();
         }
-    }
-
-    @Nullable
-    private static IElementType findByDebugName(String debugName) {
-        IElementType[] filtered = IElementType.enumerate(type -> type.getDebugName().equals(debugName));
-        return filtered.length > 0 ? filtered[0] : null;
     }
 }
