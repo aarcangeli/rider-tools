@@ -3,6 +3,9 @@
     <id>com.github.aarcangeli.ridertools</id>
     <name>Rider-Tools</name>
 
+    <!-- until-build not specified on purpose -->
+    <idea-version since-build="221" />
+
     <vendor email="alessandroarcangeli.rm@gmail.com" url="https://github.com/aarcangeli">Alessandro Arcangeli</vendor>
 
     <depends>com.intellij.modules.platform</depends>
